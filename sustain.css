@@ -1,0 +1,166 @@
+/* Universal selector to apply box-sizing */
+* {
+    box-sizing: border-box;
+  }
+  
+  /* Setting the default font, font size, and line height */
+  body {
+    font-family: Verdana, sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+    margin: 0; /* Removing margins on the body */
+  }
+  
+  /* Grouped selector for centering and width styling */
+  header, nav ul, #content-wrapper {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto; /* Auto margins to center */
+  }
+  
+  /* Positioning the header relatively so the logo is offset from it */
+  header {
+    position: relative;
+  }
+  
+  /* Positioning the logo absolutely within the header */
+  #logo {
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+  
+  /* Grouped selector to target <h1> inside <header> and unordered list in the navbar */
+  header h1, nav ul {
+    padding-left: 50px; /* Adding left padding of 50px */
+  }
+  
+  /* Styling the navigation bar */
+  nav {
+    background-color: #008000; /* Background color of navigation */
+    padding-left: 2rem; /* Move the nav bar slightly to the right */
+  }
+  
+  /* Removing item markers from the list and displaying items as inline-block */
+  nav ul {
+    list-style-type: none; /* Remove bullet points */
+    padding: 0;
+  }
+  
+  nav ul li {
+    display: inline-block; /* Display list items inline-block */
+  }
+  
+  /* Styling the anchor elements */
+  nav ul li a {
+    display: inline-block; /* Display anchors as inline-block */
+    padding: 1rem; /* Add padding */
+    color: white; /* Text color white */
+    text-decoration: none; /* Remove underline */
+    font-weight: bold; /* Bold text */
+  }
+  
+  /* Hover state for the anchor elements */
+  nav ul li a:hover {
+    background-color: black; /* Change background to black */
+    color: #9ae39a; /* Text color to #9ae39a */
+  }
+  
+  /* Styling all hyperlinks with the specified color (for other links) */
+  a {
+    color: #008000;
+  }
+  
+  /* Targeting the image inside the article inside main */
+  main article img {
+    border: 3px double #333; /* 3px wide double border with color #333 */
+    float: left; /* Float image to the left */
+    margin-top: 0.5rem; /* Top margin of 0.5rem */
+    margin-right: 1rem; /* Right margin of 1rem */
+    margin-bottom: 0.5rem; /* Bottom margin of 0.5rem */
+  }
+  
+  /* Making the section a flex container */
+  section {
+    display: flex;
+    justify-content: space-between; /* Spread columns evenly */
+  }
+  
+  /* Style the divs inside the section to behave like columns */
+  section div {
+    flex: 1; /* Each div takes equal space */
+    background-color: white; /* Set background to white */
+    border: 1px solid #008000; /* 1px solid green border */
+    border-radius: 10px; /* Border radius of 10px */
+    margin-right: 1rem; /* Right margin for spacing */
+    padding: 1rem; /* Padding inside the divs */
+    text-align: center; /* Center-align content */
+  }
+  
+  /* Remove right margin from the last div */
+  section div:last-child {
+    margin-right: 0;
+  }
+  
+  /* Styling the h2 inside the div inside the section */
+  section div h2 {
+    background-color: #008000; /* Background color */
+    color: white; /* Text color white */
+    border-radius: 10px 10px 0 0; /* Rounded top corners */
+    margin-top: 0; /* Remove top margin */
+    padding: 0.5rem; /* Add some padding */
+  }
+  
+  /* Styling the image inside the div inside the section */
+  section div img {
+    border: 3px double #333; /* 3px double border with color #333 */
+    display: block; /* Display as block */
+    margin: 1rem auto; /* Auto margins to center */
+  }
+  
+  /* Set #content-wrapper to be a flex-container */
+  #content-wrapper {
+    display: flex;
+  }
+  
+  /* Styling the <aside> as a flex item */
+aside {
+    background-color: #ccc; /* Light gray background */
+    margin-right: 1rem; /* Right margin */
+    padding: 0.5rem; /* Padding inside the aside */
+    position: relative;
+    top: 20px; /* Move it 20px down */
+    order: -1; /* Display <aside> on the left side */
+    flex: 1; /* Set its proportional width */
+  }
+  
+  /* Styling each div inside the <aside> */
+  aside .aside-section {
+    background-color: white; /* Set background to white */
+    border: 1px solid #008000; /* 1px solid green border */
+    border-radius: 10px; /* Border radius of 10px */
+    margin-bottom: 1rem; /* Add bottom margin for spacing */
+    padding: 1rem; /* Padding inside the div */
+    text-align: center; /* Center-align content */
+  }
+  
+  /* Styling the h2 inside the <aside> div */
+  aside .aside-section h2 {
+    background-color: #008000; /* Green background */
+    color: white; /* White text */
+    border-radius: 10px 10px 0 0; /* Rounded top corners */
+    margin-top: 0; /* Remove top margin */
+    padding: 0.5rem; /* Padding for spacing */
+  }
+  
+  /* Styling the anchor and paragraph inside the aside div */
+  aside .aside-section a {
+    text-decoration: none; /* Remove underline */
+    color: #008000; /* Green text color */
+  }
+  
+  aside .aside-section p {
+    margin: 0.5rem 0; /* Small margin around paragraph */
+  }
+  
+  
